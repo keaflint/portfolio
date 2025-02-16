@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 
 app = Flask(__name__)
 
@@ -17,6 +17,11 @@ def experience():
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+
+@app.route('/submit-contact', methods=['POST'])
+def submit_contact():
+    # Add email sending functionality
+    return jsonify({'success': True})
 
 if __name__ == '__main__':
     app.run(debug=True) 
