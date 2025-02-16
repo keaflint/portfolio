@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}Experience{% endblock %}
+
+{% block content %}
+<section class="experience-hero">
+    <h1>Experience</h1>
+    <p class="subtitle">Professional journey and work history</p>
+    <a href="{{ url_for('static', filename='documents/KFR.pdf') }}" 
+       class="resume-btn" 
+       target="_blank" 
+       download>
+        <span class="resume-icon">📄</span>
+        Download Resume
+    </a>
+</section>
+
+<section class="experience-grid">
+    <div class="experience-card">
+        <div class="experience-header">
+            <h2>Inside Sales Representative</h2>
+            <span class="company">3C LLC</span>
+            <span class="duration">Aug 2023 – Apr 2024</span>
+        </div>
+        <div class="experience-content">
+            <ul class="achievements">
+                <li>Developed sales strategies, driving over $1M in revenue</li>
+                <li>Used data analytics to optimize sales techniques</li>
+                <li>Built and maintained strong client relationships</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-header">
+            <h2>Software Testing Intern</h2>
+            <span class="company">The RND Group</span>
+            <span class="duration">Dec 2020 – Jan 2021</span>
+        </div>
+        <div class="experience-content">
+            <ul class="achievements">
+                <li>Tested and debugged medical device software</li>
+                <li>Gained experience in Python scripting for software validation</li>
+                <li>Collaborated with development team on quality assurance</li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %} 

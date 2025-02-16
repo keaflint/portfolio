@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}Projects{% endblock %}
+
+{% block content %}
+<section class="projects-hero">
+    <h1>My Projects</h1>
+    <p class="subtitle">Recent work and personal projects</p>
+</section>
+
+<section class="projects-grid">
+    <!-- Pickleball Game Tracking App -->
+    <div class="project-card">
+        <div class="project-content">
+            <h2>Pickleball Game Tracking App</h2>
+            <p class="project-description">
+                Built a mobile app for tracking pickleball games, players, and scores with AI-assisted game entry to automate scorekeeping.
+            </p>
+            <div class="tech-stack">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Supabase</span>
+                <span class="tech-tag">AI Integration</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Crave Tracking App -->
+    <div class="project-card">
+        <div class="project-content">
+            <h2>Crave Tracking App</h2>
+            <p class="project-description">
+                Developed a location-based food search app that finds restaurants based on specific meals, with phone-based authentication.
+            </p>
+            <div class="tech-stack">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Location API</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blur to Clear -->
+    <div class="project-card">
+        <div class="project-image">
+            <img src="{{ url_for('static', filename='images/blur-to-clear.png') }}" alt="Blur to Clear Game Interface">
+        </div>
+        <div class="project-content">
+            <h2>Blur to Clear</h2>
+            <p class="project-description">
+                Test your perception! A game where players guess images as they progressively become clearer, featuring a dynamic scoring system and multiple difficulty levels.
+            </p>
+            <div class="tech-stack">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Image Processing</span>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 
