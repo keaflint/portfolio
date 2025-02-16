@@ -52,6 +52,16 @@ body {
     color: white;
 }
 
+.brand-link {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.brand-link:hover {
+    color: white;
+}
+
 /* Container */
 .container {
     max-width: 1200px;
